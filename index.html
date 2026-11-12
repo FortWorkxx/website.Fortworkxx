@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORTWORKXX — Excellence Beyond Boundaries</title>
+  <meta name="description" content="Fortworkxx is a multi-disciplinary brand delivering technology, sound, hospitality, creative and performance services — one brand, multiple industries, one exceptional standard." />
+  <meta name="theme-color" content="#090909" />
+  <meta property="og:title" content="FORTWORKXX — Excellence Beyond Boundaries" />
+  <meta property="og:description" content="Technology. Creativity. Sound. Lifestyle. Performance. One vision. Unlimited possibilities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23090909'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23C6A15B' text-anchor='middle'%3EF%2F%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ══════════ CINEMATIC PRELOADER ══════════ -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-monogram">
+        <span class="mono-f">F</span><span class="mono-slash">/</span><span class="mono-x">X</span>
+      </div>
+      <div class="preloader-word">FORTWORKXX</div>
+      <div class="preloader-bar"><i></i></div>
+      <div class="preloader-tag">Excellence Beyond Boundaries</div>
+    </div>
+    <button class="preloader-skip" id="preloader-skip" type="button">Skip intro</button>
+  </div>
+
+  <!-- ══════════ CUSTOM CURSOR ══════════ -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ══════════ AMBIENT PARTICLE CANVAS ══════════ -->
+  <canvas id="fx-canvas" aria-hidden="true"></canvas>
+
+  <!-- ══════════ PAGE TRANSITION SWEEP ══════════ -->
+  <div id="page-sweep" aria-hidden="true"></div>
+
+  <!-- ══════════ HEADER ══════════ -->
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#/" aria-label="Fortworkxx home">
+      <span class="brand-mark">F<span class="brand-slash">/</span>X</span>
+      <span class="brand-word">FORTWORKXX</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#/" data-nav>Home</a>
+      <a href="#/about" data-nav>About</a>
+      <a href="#/divisions" data-nav>Divisions</a>
+      <a href="#/academy" data-nav>Academy</a>
+      <a href="#/portfolio" data-nav>Portfolio</a>
+      <a href="#/marketplace" data-nav>Marketplace</a>
+      <a href="#/insights" data-nav>Insights</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-gold btn-sm header-cta" href="#/bookings">Start a Project</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════ FULLSCREEN MENU ══════════ -->
+  <div class="menu-overlay" id="menu-overlay" aria-hidden="true">
+    <div class="menu-glow" aria-hidden="true"></div>
+    <nav class="menu-links" aria-label="Fullscreen">
+      <a href="#/" data-menu-link><em>01</em>Home</a>
+      <a href="#/about" data-menu-link><em>02</em>About</a>
+      <a href="#/divisions" data-menu-link><em>03</em>Divisions</a>
+      <a href="#/services" data-menu-link><em>04</em>All Services</a>
+      <a href="#/academy" data-menu-link><em>05</em>Academy</a>
+      <a href="#/portfolio" data-menu-link><em>06</em>Portfolio</a>
+      <a href="#/marketplace" data-menu-link><em>07</em>Marketplace</a>
+      <a href="#/bookings" data-menu-link><em>08</em>Bookings</a>
+      <a href="#/insights" data-menu-link><em>09</em>Insights</a>
+      <a href="#/contact" data-menu-link><em>10</em>Contact</a>
+    </nav>
+    <div class="menu-meta">
+      <div class="menu-divisions">
+        <span class="menu-label">Divisions</span>
+        <a href="#/division/technologies" data-menu-link>Fortworkxx Technologies</a>
+        <a href="#/division/sound" data-menu-link>Fortworkxx Sound &amp; Entertainment</a>
+        <a href="#/division/hospitality" data-menu-link>Fortworkxx Hospitality</a>
+        <a href="#/division/creative" data-menu-link>Fortworkxx Creative Studio</a>
+        <a href="#/division/performance" data-menu-link>Fortworkxx Performance</a>
+      </div>
+      <div class="menu-contact">
+        <span class="menu-label">Reach us</span>
+        <a href="mailto:info@fortworkxx.com">info@fortworkxx.com</a>
+        <a href="https://wa.me/2340000000000" target="_blank" rel="noopener">WhatsApp</a>
+        <span>Lagos, Nigeria</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ APP ROUTER MOUNT ══════════ -->
+  <main id="app" tabindex="-1"></main>
+
+  <!-- ══════════ GLOBAL FOOTER ══════════ -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-cta">
+      <p class="eyebrow">Let's create something exceptional</p>
+      <h2 class="footer-cta-title">Ready to begin your next <em>masterpiece?</em></h2>
+      <div class="footer-cta-actions">
+        <a class="btn btn-gold" href="#/bookings">Book a Service</a>
+        <a class="btn btn-outline" href="#/contact">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#/">
+          <span class="brand-mark">F<span class="brand-slash">/</span>X</span>
+          <span class="brand-word">FORTWORKXX</span>
+        </a>
+        <p>A multi-disciplinary professional brand delivering technology solutions, creative production, lifestyle services, education and personal development — one brand, multiple industries, one exceptional standard.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Divisions</h4>
+        <a href="#/division/technologies">Technologies</a>
+        <a href="#/division/sound">Sound &amp; Entertainment</a>
+        <a href="#/division/hospitality">Hospitality</a>
+        <a href="#/division/creative">Creative Studio</a>
+        <a href="#/division/performance">Performance</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#/about">About</a>
+        <a href="#/portfolio">Portfolio</a>
+        <a href="#/academy">Academy</a>
+        <a href="#/marketplace">Marketplace</a>
+        <a href="#/insights">Insights</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#/bookings">Bookings</a>
+        <a href="#/contact">Contact</a>
+        <a href="#/portal">Client Portal</a>
+        <a href="#/legal">Privacy &amp; Terms</a>
+      </div>
+      <div class="footer-newsletter">
+        <h4>The Fortworkxx Brief</h4>
+        <p>Occasional dispatches on craft, technology and opportunity.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email address" />
+          <button class="btn btn-gold btn-sm" type="submit">Join</button>
+        </form>
+        <p class="form-note" id="newsletter-note" role="status"></p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© <span id="year"></span> Fortworkxx. All rights reserved.</span>
+      <span class="footer-base-tag">Technology · Creativity · Sound · Lifestyle · Performance</span>
+    </div>
+  </footer>
+
+  <!-- ══════════ FLOATING WHATSAPP ══════════ -->
+  <a class="whatsapp-float" href="https://wa.me/2340000000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/data.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
