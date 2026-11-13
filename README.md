@@ -1,5 +1,9 @@
 # website.Fortworkxx
 
+> **STATUS: Immersive website built.** Open `index.html` (or deploy the repo root to any static host) to view the Fortworkxx experience — cinematic preloader, particle field, 5 divisions, 8 service pages, academy, portfolio, marketplace, booking wizard and more, in black / gold / royal blue / white.
+>
+> **Full functionality plan:** see [`docs/FULL_FUNCTIONALITY_BLUEPRINT.md`](docs/FULL_FUNCTIONALITY_BLUEPRINT.md) — the complete checklist of everything needed (domain, hosting, payments, database, academy LMS, admin, legal, security, costs) to make the site fully functional for all purposes.
+
 hey chat, i what want to create a hyper immersive website for my self to showcase all my services which include Tech services/training, Sound engineering services, catering services, Printing services, Art services/training, Cleaning services, Music performance services/training, personal trainer services, then tell me all the details i need to make the website full functional for all purposes. my colors are black, gold, royal blue, white, i want the website to be elegantly luxurious
 
 
